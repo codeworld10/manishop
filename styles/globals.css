@@ -23,5 +23,8 @@ div .checkot{
 }
 div .proimg{
   border: 3px solid black;
+  margin-top: 5px;
 }
-
+div .proimg1{
+  border: 3px solid rgb(224, 34, 145);
+}
