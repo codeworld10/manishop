@@ -14,3 +14,14 @@ a {
 * {
   box-sizing: border-box;
 }
+div .promain{
+  display: flex;
+  justify-content: space-around;
+}
+div .checkot{
+  width: 400px;
+}
+div .proimg{
+  border: 3px solid black;
+}
+

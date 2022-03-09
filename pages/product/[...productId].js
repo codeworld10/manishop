@@ -4,24 +4,35 @@ import { useState } from "react";
 import Image from "next/image";
 
 const Post = ({ product }) => {
-  const [image , setImage] = useState(product.images[0].src)
- 
+  const [image, setImage] = useState(product.images[0].src);
+
   console.log(product);
   return (
     <>
-      <div >
-        <Image  src={image} width="200" height="200" />
-      
-      <div >
-        {product.images.map((image, index)=>{
-        
-          return <Image onClick={()=> setImage(image)} src={image.src} width="100" height= "100" />
-        
-        })}
+      <div className="promain">
+        <div className="checkot">
+         <div className="proimg1"> <Image  src={image} width="400" height="400" /></div>
+
+          <div className="proimg"><span>
+            {product.images.map((image, index) => {
+              return (
+                <Image
+                  onClick={() => setImage(image)}
+                  src={image.src}
+                  width="100"
+                  height="100"
+                />
+              );
+            })}
+            </span>
           </div>
+
+          <p> {product.title}</p>
+          <span>{product.description}</span>
+         
+        </div>
+        <div className="chk">000</div>
       </div>
-      <p> {product.title}</p>
-      <span>{product.description}</span>
     </>
   );
 };
