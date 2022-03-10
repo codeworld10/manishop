@@ -36,7 +36,7 @@ const Post = ({ product }) => {
         <div className="checkot">
           <div className="proimg1">
             {" "}
-            <Image src={image} width="400" height="400" />
+            <Image src={image} width="600" height="600" />
           </div>
 
           <div className="proimg">
