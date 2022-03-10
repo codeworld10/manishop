@@ -16,7 +16,9 @@ a {
 }
 div .promain{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 20px 20px 20px 20px;
+  margin: 10px;
 }
 div .checkot{
   width: 400px;
@@ -27,4 +29,72 @@ div .proimg{
 }
 div .proimg1{
   border: 3px solid rgb(224, 34, 145);
+}
+div .chk{
+ margin-top: 200px;
+ width: 400px;
+}
+.list {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 5px;
+}
+.navbar {
+  height: 60px;
+  background-color: rgb(94, 94, 94);
+}
+.logomain {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+.logos {
+  object-fit: cover;
+}
+.logomob {
+  display: none;
+}
+.social {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.media {
+  margin: 5px;
+  cursor: pointer;
+}
+.media:hover {
+  transform: scale(1.7);
+  transition: 1s;
+}
+
+/* ------------------centered pc menu--------------- */
+
+.pcmenu {
+  display: flex;
+  justify-content: center;
+}
+
+/*-------------------------- giving space in links and removre text decoration------- */
+
+.active {
+  text-decoration: none;
+  margin: 7px;
+  font-size: 22px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+
+
+div .dvv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nami{
+  cursor: pointer;
 }
