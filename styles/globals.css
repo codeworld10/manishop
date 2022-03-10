@@ -87,16 +87,24 @@ div .chk{
   font-weight: 600;
 }
 
-
+div .imgcn{
+padding: 5px 5px 5px 5px;
+}
 
 div .dvv{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 
 }
 div .hmain{
   padding: 20px 20px 20px 20px;
+  border: 2px solid grey;
+}
+div .hmain1{
+  padding: 20px 20px 20px 20px;
+  border: 2px solid grey;
 }
 .nami{
   cursor: pointer;
