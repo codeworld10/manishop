@@ -21,7 +21,7 @@ function index({ products }) {
       <>
       <div className="topi">
       <div className="wel">
-        <h1>Welcome To Mani Branding</h1>
+        <h1 className="welh">Welcome To Mani Branding</h1>
         <span><button className="btn">Shop Now</button></span>
         </div>
         </div>
