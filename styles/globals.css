@@ -91,9 +91,12 @@ div .chk{
 
 div .dvv{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
+}
+div .hmain{
+  padding: 20px 20px 20px 20px;
 }
 .nami{
   cursor: pointer;
