@@ -1,11 +1,11 @@
 import { client } from "../../utils/shopify";
-import Router from "next/router";
+
 import { useState } from "react";
 import Image from "next/image";
 import { Input } from "semantic-ui-react";
 import Nav from "../../Components/Nav";
 
-<Nav />
+
 
 const Post = ({ product }) => {
   const [image, setImage] = useState(product.images[0].src);
@@ -32,11 +32,21 @@ const Post = ({ product }) => {
   };
   return (
     <>
+    <Nav />
+    <button
+        onClick={() => {
+          const storage = window.localStorage;
+          const cart = JSON.parse(storage.getItem("cart"));
+          Router.replace(cart.webUrl);
+        }}
+      >
+        checkout demo
+      </button>
       <div className="promain">
         <div className="checkot">
           <div className="proimg1">
             {" "}
-            <Image src={image} width="600" height="600" />
+            <Image src={image} width="600" height="900" />
           </div>
 
           <div className="proimg">
@@ -77,15 +87,7 @@ const Post = ({ product }) => {
         </div>
         </div>
       </div>
-      <button
-        onClick={() => {
-          const storage = window.localStorage;
-          const cart = JSON.parse(storage.getItem("cart"));
-          Router.replace(cart.webUrl);
-        }}
-      >
-        checkout demo
-      </button>
+    
     </>
   );
 };

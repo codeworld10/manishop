@@ -19,12 +19,7 @@ function index({ products }) {
       <Nav />
     
       <>
-      <div className="topi">
-      <div className="wel">
-        <h1 className="welh">Welcome To Mani Branding</h1>
-        <span><button className="btn">Shop Now</button></span>
-        </div>
-        </div>
+      
       <div className="latest">
         <h2>Our Latest Products</h2>
       </div>

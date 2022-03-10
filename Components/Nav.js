@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Router from "next/router";
 
 function Nav() {
 
@@ -60,6 +61,7 @@ function Nav() {
           </div>
         </div>
       </div>
+      
     </>
   )
 }
