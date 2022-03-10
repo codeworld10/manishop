@@ -59,9 +59,10 @@ const Post = ({ product }) => {
         <div className="chk">
         <h2> {product.title}</h2>
           <span>{product.description}</span>
-          <Input
+        <div className="chkbtn">
+          <Input 
             action={{
-              color: "teal",
+              color: "black",
               labelPosition: "left",
               icon: "cart",
               onClick: addToCart,
@@ -70,8 +71,10 @@ const Post = ({ product }) => {
             onChange={(e, { value }) => setQuantity(Number(value))}
             type="number"
             actionPosition="right"
-            placeholder="add"
+            placeholder="0"
+           
           />
+        </div>
         </div>
       </div>
       <button

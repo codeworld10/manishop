@@ -8,13 +8,26 @@ function index({ products }) {
   console.log({ products });
   return (
     <>
+    <Head>
+    <title>Usman Branding</title>
+  <meta charSet="UTF-8"/>
+  <meta name="description" content="maniwebdev"/>
+  <meta name="keywords" content="maniwebdev"/>
+  <meta name="author" content="Muhammad Usman"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</Head>
       <Nav />
-      <Head>
-        <title>Usman Branding</title>
-        <meta name="description" content="maniwebdev" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    
       <>
+      <div className="topi">
+      <div className="wel">
+        <h1>Welcome To Mani Branding</h1>
+        <span><button className="btn">Shop Now</button></span>
+        </div>
+        </div>
+      <div className="latest">
+        <h2>Our Latest Products</h2>
+      </div>
       <div className="dvv">
         {products?.map((product) => {
           return (
@@ -34,9 +47,7 @@ function index({ products }) {
 
       </>
 
-      <div className="latest">
-        <h2>Our Latest Products</h2>
-      </div>
+     
     </>
   );
 }

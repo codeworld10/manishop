@@ -24,11 +24,30 @@ div .checkot{
   width: 400px;
 }
 div .proimg{
-  border: 3px solid black;
+
   margin-top: 5px;
 }
-div .proimg1{
-  border: 3px solid rgb(224, 34, 145);
+div .chkbtn{
+  margin-top: 10px;
+}
+.latest{
+  text-align: center;
+}
+div .topi{
+  text-align: center;
+  background-image: url(/images/top.jpg);
+ background-size: cover;
+ height: 1200px;
+  background-repeat: no-repeat;
+
+}
+
+.btn{
+  color: black;
+  background-color: grey;
+  padding: 7px 7px 7px 7px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 div .chk{
  margin-top: 200px;
