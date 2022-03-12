@@ -30,11 +30,11 @@ function index({ products }) {
             <div className="hmain1">
               <div className="imgcn">
               <div className="hmain">
-                <Image src={product.images[0].src} width="200" height="200" />
+                <Image  src={product.images[0].src} width="200" height="200" />
               </div>
               </div>
               <Link key={product.id} href={`/product/${product.id}`}>
-                <h5  className="nami">{product.title} </h5>
+                <h5 className="nami">{product.title} </h5>
 
               </Link>
             </div>

@@ -66,7 +66,7 @@ const Post = ({ product }) => {
             <span>
               {product.images.map((image, index) => {
                 return (
-                  <Image
+                  <Image 
                     onClick={() => setImage(image)}
                     src={image.src}
                     width="130"
