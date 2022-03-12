@@ -1,5 +1,5 @@
 import { client } from "../../utils/shopify";
-
+import Router from "next/router";
 import { useState } from "react";
 import Image from "next/image";
 import { Input } from "semantic-ui-react";
@@ -33,7 +33,9 @@ const Post = ({ product }) => {
   return (
     <>
     <Nav />
-    <button
+    
+    <div className="bitucen">
+      <button className="bitu"
         onClick={() => {
           const storage = window.localStorage;
           const cart = JSON.parse(storage.getItem("cart"));
@@ -42,6 +44,9 @@ const Post = ({ product }) => {
       >
         checkout demo
       </button>
+      </div>
+
+
       <div className="promain">
         <div className="checkot">
           <div className="proimg1">
@@ -87,7 +92,7 @@ const Post = ({ product }) => {
         </div>
         </div>
       </div>
-    
+      
     </>
   );
 };

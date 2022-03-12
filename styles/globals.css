@@ -118,3 +118,16 @@ div .hmain1 {
 .nami {
   cursor: pointer;
 }
+.bitu{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: grey;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+div .bitucen{
+  display: flex;
+  justify-content: center;
+}
