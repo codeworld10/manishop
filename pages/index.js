@@ -6,7 +6,7 @@ import Image from "next/image";
 import Nav from "../Components/Nav";
 
 function index({ products }) {
-  console.log({ products });
+  
   return (
     <>
     <Head>

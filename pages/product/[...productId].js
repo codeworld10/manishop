@@ -36,7 +36,7 @@ const Post = ({ product }) => {
       },
     ]);
     storage.setItem('cart', JSON.stringify(cart));
-    console.log(cart);
+   
   };
   return (
     <>
