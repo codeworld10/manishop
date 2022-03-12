@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { client } from "../utils/shopify";
+
 import Link from "next/link";
 import Image from "next/image";
 import Nav from "../Components/Nav";
