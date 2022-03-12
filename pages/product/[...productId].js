@@ -7,6 +7,7 @@ import Nav from "../../Components/Nav";
 
 
 
+
 const Post = ({ product }) => {
   const [image, setImage] = useState(product.images[0].src);
 
@@ -92,7 +93,17 @@ const Post = ({ product }) => {
         </div>
         </div>
       </div>
-      
+      <hr></hr>
+      <h2 className="lvc">Leave a comment</h2>
+<div className="textar">
+      <textarea className="area" type="textarea" >
+      </textarea>
+      </div>
+      <div className="btcn">
+<button className="sbbtn">
+  Submit
+</button>
+</div>
     </>
   );
 };

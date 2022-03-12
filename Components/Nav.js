@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Router from "next/router";
+
 
 function Nav() {
 
@@ -36,7 +36,7 @@ function Nav() {
               </Link>
             </li>
             <li className="list">
-              <Link href="/aboutme">
+              <Link href="/about">
                 <a className="active">About</a>
               </Link>
             </li>

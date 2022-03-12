@@ -108,15 +108,19 @@ div .dvv {
   margin-top: 10px;
 }
 div .hmain {
-  padding: 20px 20px 20px 20px;
+  padding: 5px 5px 5px 5px;
   border: 2px solid grey;
+  border-radius: 5px;
+  
 }
 div .hmain1 {
-  padding: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
   border: 2px solid grey;
+  margin: 20px;
 }
 .nami {
   cursor: pointer;
+  font-size: 18px;
 }
 .bitu{
   cursor: pointer;
@@ -131,4 +135,28 @@ div .bitucen{
   display: flex;
   justify-content: right;
   margin-right: 20px;
+}
+.lvc{
+  text-align: center;
+}
+.area{
+ 
+  width: 50%;
+  height: 100px;
+}
+div .textar{
+  display: flex;
+  justify-content: center;
+}
+div .btcn{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.sbbtn{
+  color: white;
+  background-color: black;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
