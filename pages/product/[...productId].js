@@ -6,7 +6,9 @@ import { Input } from "semantic-ui-react";
 import Nav from "../../Components/Nav";
 
 
-
+const handleonClick= () => {
+  alert("Added to Cart")
+}
 
 const Post = ({ product }) => {
   const [image, setImage] = useState(product.images[0].src);
@@ -19,6 +21,7 @@ const Post = ({ product }) => {
     if (!checkoutId) {
       const checkout = await client.checkout.create();
       checkoutId = checkout.id;
+   
       storage.setItem("checkoutId", checkoutId);
     }
 
@@ -83,6 +86,7 @@ const Post = ({ product }) => {
               icon: "cart",
               onClick: addToCart,
               content: "Add To Cart",
+              onClick: handleonClick
             }}
             onChange={(e, { value }) => setQuantity(Number(value))}
             type="number"
