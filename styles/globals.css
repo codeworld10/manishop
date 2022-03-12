@@ -122,12 +122,13 @@ div .hmain1 {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  color: black;
-  background-color: grey;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   padding: 5px 5px 5px 5px;
   border-radius: 5px;
 }
 div .bitucen{
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  margin-right: 20px;
 }

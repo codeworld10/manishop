@@ -42,7 +42,7 @@ const Post = ({ product }) => {
           Router.replace(cart.webUrl);
         }}
       >
-        checkout demo
+        Checkout
       </button>
       </div>
 

@@ -34,7 +34,8 @@ function index({ products }) {
               </div>
               </div>
               <Link key={product.id} href={`/product/${product.id}`}>
-                <h5 className="nami">{product.title}</h5>
+                <h5  className="nami">{product.title} </h5>
+
               </Link>
             </div>
           );
