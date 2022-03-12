@@ -88,6 +88,7 @@ const Post = ({ product }) => {
               content: "Add To Cart",
               onClick: handleonClick
             }}
+    
             onChange={(e, { value }) => setQuantity(Number(value))}
             type="number"
             actionPosition="right"
@@ -100,7 +101,7 @@ const Post = ({ product }) => {
       <hr></hr>
       <h2 className="lvc">Leave a comment</h2>
 <div className="textar">
-      <textarea className="area" type="textarea" >
+      <textarea className="area" type="textarea" placeholder="write a review" >
       </textarea>
       </div>
       <div className="btcn">
