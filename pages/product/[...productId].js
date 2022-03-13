@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Input } from "semantic-ui-react";
 import Nav from "../../Components/Nav";
+import Footer from "../../Components/Footer";
 
 
 const maniclick = () => {
@@ -112,7 +113,7 @@ const Post = ({ product }) => {
   Submit
 </button>
 </div>
-      
+      <Footer />
     </>
   );
 };
