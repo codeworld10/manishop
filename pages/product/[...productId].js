@@ -6,6 +6,14 @@ import { Input } from "semantic-ui-react";
 import Nav from "../../Components/Nav";
 
 
+const maniclick = () => {
+  window.open("https://www.maniwebdev.com/contact")
+}
+
+const handleonClick= () => {
+  alert("Added to Cart")
+}
+
 
 const Post = ({ product }) => {
   const [image, setImage] = useState(product.images[0].src);
@@ -42,7 +50,7 @@ const Post = ({ product }) => {
           Router.replace(cart.webUrl);
         }}
       >
-        checkout demo
+        Checkout
       </button>
       </div>
 
@@ -82,6 +90,7 @@ const Post = ({ product }) => {
               icon: "cart",
               onClick: addToCart,
               content: "Add To Cart",
+              onClick: handleonClick,
             }}
             onChange={(e, { value }) => setQuantity(Number(value))}
             type="number"
@@ -92,6 +101,17 @@ const Post = ({ product }) => {
         </div>
         </div>
       </div>
+      <hr></hr>
+      <h2 className="lvc">Leave a comment</h2>
+<div className="textar">
+      <textarea className="area" type="textarea" placeholder="write a review" >
+      </textarea>
+      </div>
+      <div className="btcn">
+<button onClick={maniclick} className="sbbtn">
+  Submit
+</button>
+</div>
       
     </>
   );
