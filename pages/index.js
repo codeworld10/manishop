@@ -40,8 +40,8 @@ function index({ products }) {
                   <div className="hmain">
                     <Image
                       src={product.images[0].src}
-                      width="200"
-                      height="200"
+                      width="300"
+                      height="300"
                     />
                   </div>
                 </div>
