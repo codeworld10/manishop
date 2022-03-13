@@ -5,13 +5,6 @@ import Image from "next/image";
 import { Input } from "semantic-ui-react";
 import Nav from "../../Components/Nav";
 
-const maniclick = () => {
-  window.open("https://www.maniwebdev.com/contact")
-}
-const handleonClick= () => {
-  alert("Added to Cart")
-}
-
 
 
 const Post = ({ product }) => {
@@ -25,7 +18,6 @@ const Post = ({ product }) => {
     if (!checkoutId) {
       const checkout = await client.checkout.create();
       checkoutId = checkout.id;
-   
       storage.setItem("checkoutId", checkoutId);
     }
 
@@ -36,7 +28,7 @@ const Post = ({ product }) => {
       },
     ]);
     storage.setItem('cart', JSON.stringify(cart));
-   
+    console.log(cart);
   };
   return (
     <>
@@ -50,7 +42,7 @@ const Post = ({ product }) => {
           Router.replace(cart.webUrl);
         }}
       >
-        Checkout
+        checkout demo
       </button>
       </div>
 
@@ -66,7 +58,7 @@ const Post = ({ product }) => {
             <span>
               {product.images.map((image, index) => {
                 return (
-                  <Image 
+                  <Image
                     onClick={() => setImage(image)}
                     src={image.src}
                     width="130"
@@ -90,9 +82,7 @@ const Post = ({ product }) => {
               icon: "cart",
               onClick: addToCart,
               content: "Add To Cart",
-              onClick: handleonClick
             }}
-    
             onChange={(e, { value }) => setQuantity(Number(value))}
             type="number"
             actionPosition="right"
@@ -102,21 +92,7 @@ const Post = ({ product }) => {
         </div>
         </div>
       </div>
-      <div>
-     
-
-      </div>
-      <hr></hr>
-      <h2 className="lvc">Leave a comment</h2>
-<div className="textar">
-      <textarea className="area" type="textarea" placeholder="write a review" >
-      </textarea>
-      </div>
-      <div className="btcn">
-<button onClick={maniclick} className="sbbtn">
-  Submit
-</button>
-</div>
+      
     </>
   );
 };

@@ -27,7 +27,7 @@ function index({ products }) {
       <div className="dvv">
         {products?.map((product) => {
           return (
-            <div className="hmain1">
+            <div  className="hmain1">
               <div className="imgcn">
               <div className="hmain">
                 <Image  src={product.images[0].src} width="200" height="200" />
